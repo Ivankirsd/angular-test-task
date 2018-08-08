@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WorkPageComponent } from './work-page.component';
-import { WorkPageRoutingModule } from './work-routing.module';
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { NgPipesModule } from 'ngx-pipes';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { Page3Component } from './page3/page3.component';
-import { AboutItComponent } from './about-it/about-it.component';
+import { HomePageOneComponent } from './homePageOne/home-page-one.component';
+import { HomePageTwoComponent } from './homePageTwo/home-page-two.component';
+import { HomePageThreeComponent } from './homePageThree/home-page-three.component';
+import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import { TableComponent } from '../shared/table/table.component';
@@ -18,11 +18,11 @@ import { PaginatorComponent } from '../shared/table/paginator/paginator.componen
 
 @NgModule({
   declarations: [
-    WorkPageComponent,
-    Page1Component,
-    Page2Component,
-    Page3Component,
-    AboutItComponent,
+    HomeComponent,
+    HomePageOneComponent,
+    HomePageTwoComponent,
+    HomePageThreeComponent,
+    AboutComponent,
     NavbarComponent,
     SidebarComponent,
     TableComponent,
@@ -31,12 +31,12 @@ import { PaginatorComponent } from '../shared/table/paginator/paginator.componen
   ],
   imports: [
     CommonModule,
-    WorkPageRoutingModule,
+    HomeRoutingModule,
     FormsModule,
     NgPipesModule
   ]
 })
 
-export class WorkPageModule {
+export class HomeModule {
 
 }

@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-work-page',
-  templateUrl: './work-page.component.html',
-  styleUrls: ['./work-page.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class WorkPageComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   sideBarIsOpen = false;
 

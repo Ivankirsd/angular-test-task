@@ -1,8 +1,8 @@
-.workPage {
+.homePage {
   height: 100%;
 }
 
-.workPage-wraper {
+.homePage-wraper {
   display: flex;
   align-items: stretch;
   height: calc( 100% - 50px);

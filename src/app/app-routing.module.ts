@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'page1', pathMatch: 'full'}
+  {path: '', redirectTo: 'homePageOne', pathMatch: 'full'}
 ];
 
 @NgModule({
