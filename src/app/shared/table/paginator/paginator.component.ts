@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {log} from 'util';
 
 @Component({
   selector: 'app-paginator',
@@ -44,8 +45,8 @@ export class PaginatorComponent implements OnInit {
     this.goPrev.emit(true);
   }
 
-  onNext(next: boolean): void {
-    this.goNext.emit(next);
+  onNext(): void {
+    this.goNext.emit(true);
 
   }
 
@@ -54,7 +55,7 @@ export class PaginatorComponent implements OnInit {
   }
 
   lastPage(): boolean {
-    return this.perPage * this.page > this.count;
+    return this.perPage * this.page >= this.count;
   }
 
   getPages(): number[] {

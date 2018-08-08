@@ -13,11 +13,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() { }
 
-  onSideBarOpen () {
+  onSideBarOpen ($event) {
     this.sideBarIsOpen = !this.sideBarIsOpen;
   }
 
-  onSideBarClose () {
+  onSideBarClose ($event) {
     this.sideBarIsOpen = false;
   }
 }

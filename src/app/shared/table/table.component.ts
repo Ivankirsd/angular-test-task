@@ -34,7 +34,6 @@ export class TableComponent implements OnInit {
   }
 
   setPerPage (n: number) {
-    console.log(n)
     this.perPage = n;
     this.page = 1;
   }

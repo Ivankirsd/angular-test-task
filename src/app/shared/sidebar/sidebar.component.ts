@@ -18,7 +18,6 @@ export class SidebarComponent implements OnInit {
   }
 
   onSideBarPagesMenuOpen() {
-    console.log('click');
     this.sideBarPagesMenuIsOpen = !this.sideBarPagesMenuIsOpen;
   }
 
