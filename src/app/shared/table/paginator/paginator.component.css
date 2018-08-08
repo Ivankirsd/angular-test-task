@@ -1,0 +1,13 @@
+.pagination-container {
+  position: fixed;
+  bottom: 25px;
+  right: 10%;
+  height: 50px;
+}
+.pagination li {
+  display: flex;
+}
+
+.pagination-info {
+  margin: auto 10px;
+}

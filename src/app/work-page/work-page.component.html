@@ -1,0 +1,21 @@
+<div class="workPage">
+
+  <app-navbar
+    [sideBarIsOpen]="sideBarIsOpen"
+    (sideBarOpenEvent)="onSideBarOpen($event)"
+  ></app-navbar>
+
+  <div class="workPage-wraper navbar-expand-lg">
+
+   <app-sidebar
+     [sideBarIsOpen]="sideBarIsOpen"
+     (sideBarClose)="onSideBarClose($event)"
+   ></app-sidebar>
+
+    <div class="content ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
+

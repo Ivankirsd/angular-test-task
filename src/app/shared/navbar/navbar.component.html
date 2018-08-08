@@ -1,0 +1,19 @@
+<nav class="navbar  navbar-dark bg-light justify-content-center border-bottom">
+  <div class="navbar-expand-lg">
+    <button
+      class="navbar-toggler menu-button "
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01"
+      [attr.aria-expanded]="sideBarIsOpen"
+      aria-label="Toggle navigation"
+      (click)="onSideBarOpen()"
+      [ngClass]="{'collapsed': !sideBarIsOpen}"
+    >
+      <span class="zmdi zmdi-menu menu-icon"></span>
+    </button>
+  </div>
+
+  <span class="nav-item my-auto ">Тестовое задание</span>
+</nav>

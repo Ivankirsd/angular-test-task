@@ -1,0 +1,17 @@
+nav.navbar {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.menu-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.menu-icon {
+  color: black;
+}

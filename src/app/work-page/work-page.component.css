@@ -1,0 +1,19 @@
+.workPage {
+  height: 100%;
+}
+
+.workPage-wraper {
+  display: flex;
+  align-items: stretch;
+  height: calc( 100% - 50px);
+  max-height: calc( 100% - 50px);
+}
+
+.content {
+  width: 100%;
+}
+
+
+
+
+

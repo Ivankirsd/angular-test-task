@@ -1,0 +1,34 @@
+<div class="table-content">
+  <table class="table table-bordered">
+
+    <thead>
+    <tr>
+      <th scope="col">№</th>
+      <th scope="col" *ngFor="let headerValue of tableHeaders | values">{{ headerValue}}</th>
+    </tr>
+    </thead>
+
+    <tbody class="borderless">
+    <tr *ngFor="let tableRow of this.tableData.slice((page-1)*perPage,page*perPage); index as i">
+      <th scope="row">{{i+1+(page-1)*perPage}}</th>
+      <td *ngFor="let value of tableRow | values ">
+        {{value}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+<app-paginator
+  [count]="tableData.length"
+  [page]="page"
+  [perPage]="perPage"
+  [pagesToShow]="5"
+  [loading]="someLoadingVar"
+  (goPrev)="prevPage()"
+  (goNext)="nextPage()"
+  (goPage)="goToPage($event)"
+  (setPerPage)="setPerPage($event)"
+  setPerPage
+>
+></app-paginator>

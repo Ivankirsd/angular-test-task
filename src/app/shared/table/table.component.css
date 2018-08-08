@@ -1,0 +1,18 @@
+.table-content {
+  display: block;
+  max-height: calc(100% - 50px - 60px);
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  width: 100%;
+  padding: 20px;
+}
+
+.table {
+  overflow-y: auto;
+}
+
+tbody.borderless > tr > td,
+tbody.borderless > tr > th {
+  border-top: none;
+  border-bottom: none;
+}

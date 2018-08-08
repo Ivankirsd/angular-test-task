@@ -1,0 +1,40 @@
+<div
+  class="collapse navbar-collapse"
+  id="navbarTogglerDemo01"
+  [ngClass]="{'show': sideBarIsOpen}"
+>
+
+  <nav class="sidebar border-right  navbar-expand-lg">
+    <ul class="sidebar-menu list-unstyled components">
+      <li class="" [ngClass]="{'active': sideBarPagesMenuIsOpen}">
+        <a
+          data-toggle="collapse"
+          [attr.aria-expanded]="sideBarPagesMenuIsOpen"
+          class="dropdown-toggle"
+          [ngClass]="{'collapsed': sideBarPagesMenuIsOpen}"
+          (click)="onSideBarPagesMenuOpen()"
+        >Меню</a>
+        <ul
+          class="collapse list-unstyled show"
+          id="homeSubmenu"
+          [ngClass]="{'show': sideBarPagesMenuIsOpen}"
+
+        >
+          <li >
+            <a routerLink="/page1" (click)="onSideBarClose()">Страница 1</a>
+          </li>
+          <li class="">
+            <a class="" routerLink="/page2" (click)="onSideBarClose()">Страница 2</a>
+          </li>
+          <li>
+            <a routerLink="/page3" (click)="onSideBarClose()">Страница 3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/about" (click)="onSideBarClose()">О проекте</a>
+      </li>
+    </ul>
+
+  </nav>
+</div>
