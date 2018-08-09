@@ -37,4 +37,6 @@ import { PaginatorComponent } from '../shared/table/paginator/paginator.componen
   ]
 })
 
-export class HomeModule {}
+export class HomeModule {
+
+}
