@@ -1,13 +1,46 @@
 .pagination-container {
   position: fixed;
-  bottom: 25px;
+  bottom: 0;
+  margin-bottom: 50px;
   right: 10%;
   height: 50px;
 }
+.pagination-container nav {
+  margin: 5px 10px 5px 10px;
+}
+
 .pagination li {
   display: flex;
 }
 
-.pagination-info {
-  margin: auto 10px;
+.pagination-per-page-info .form-group {
+  margin: 5px 0;
 }
+
+@media (max-width: 576px) {
+  .pagination-per-page-info .form-group {
+    margin: 0px 0;
+  }
+  .pagination-container nav {
+    margin: 3px 10px 5px 10px;
+  }
+}
+
+.pagination-info, .pagination-per-page-info div span {
+  padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+  .pagination-info {
+    font-size: small;
+    padding: 0 10px;
+  }
+  .pagination-per-page-info {
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+}
+
+

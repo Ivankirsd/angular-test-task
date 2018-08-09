@@ -6,9 +6,9 @@ import { HomeRoutingModule } from './home-routing.module';
 import { FormsModule } from '@angular/forms';
 
 import { NgPipesModule } from 'ngx-pipes';
-import { HomePageOneComponent } from './homePageOne/home-page-one.component';
-import { HomePageTwoComponent } from './homePageTwo/home-page-two.component';
-import { HomePageThreeComponent } from './homePageThree/home-page-three.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { PeoplesComponent } from './peoples/peoples.component';
+import { OtherComponent } from './other/other.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
@@ -19,9 +19,9 @@ import { PaginatorComponent } from '../shared/table/paginator/paginator.componen
 @NgModule({
   declarations: [
     HomeComponent,
-    HomePageOneComponent,
-    HomePageTwoComponent,
-    HomePageThreeComponent,
+    CompaniesComponent,
+    PeoplesComponent,
+    OtherComponent,
     AboutComponent,
     NavbarComponent,
     SidebarComponent,
@@ -37,6 +37,4 @@ import { PaginatorComponent } from '../shared/table/paginator/paginator.componen
   ]
 })
 
-export class HomeModule {
-
-}
+export class HomeModule {}

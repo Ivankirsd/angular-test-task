@@ -3,10 +3,10 @@ import { DataService } from '../../services/tableDatas/data.service';
 
 @Component({
   selector: 'app-home-page-one',
-  templateUrl: './home-page-one.component.html',
-  styleUrls: ['./home-page-one.component.css']
+  templateUrl: './companies.component.html',
+  styleUrls: ['./companies.component.css']
 })
-export class HomePageOneComponent implements OnInit {
+export class CompaniesComponent implements OnInit {
   tableHeaders;
   tableData = [] ;
 
